@@ -22,6 +22,6 @@
 
 ## 🌐 Live Demo
 
-- Link: https://luaiuyuki.github.io/BookStore/index.html
+- Link: https://http://127.0.0.1:5502/index.html
 
 
