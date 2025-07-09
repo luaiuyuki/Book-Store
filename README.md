@@ -22,6 +22,6 @@
 
 ## 🌐 Live Demo
 
-- Link: https://dungletien.github.io/BookStore/index.html
+- Link: https://luaiuyuki.github.io/BookStore/index.html
 
 
