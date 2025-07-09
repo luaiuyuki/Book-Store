@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - BookStore</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <h1>BookStore</h1>
+            </div>
+            <div class="nav-links">
+                <a href="./index.html">Home</a>
+                <a href="./categories.html">Categories</a>
+                <a href="./new-releases.html">New Releases</a>
+                <a href="./contact.html" class="active">Contact</a>
+            </div>
+            <div class="nav-icons">
+                <a href="#" class="search-icon"><i class="fas fa-search"></i></a>
+                <div class="cart-wrapper">
+                    <a href="#" class="cart-icon"><i class="fas fa-shopping-cart"></i><span class="cart-count">0</span></a>
+                </div>
+                <a href="#" class="user-icon"><i class="fas fa-user"></i></a>
+            </div>
+        </nav>
+    </header>
+
+    <main class="contact-page">
+        <section class="contact-header">
+            <h1>Contact Us</h1>
+            <p>Have questions? We'd love to hear from you. Send us a message and we'll respond as soon as possible.</p>
+            <div class="contact-quick-links">
+                <a href="#contact-form" class="quick-link">
+                    <i class="fas fa-envelope"></i>
+                    Send Message
+                </a>
+                <a href="#faq-section" class="quick-link">
+                    <i class="fas fa-question-circle"></i>
+                    View FAQs
+                </a>
+                <a href="tel:+15551234567" class="quick-link">
+                    <i class="fas fa-phone"></i>
+                    Call Us
+                </a>
+            </div>
+        </section>
+
+        <section class="contact-content">
+            <div class="contact-info">
+                <div class="contact-card">
+                    <i class="fas fa-phone"></i>
+                    <h3>Call Us</h3>
+                    <p><a href="tel:+15551234567">+1 (555) 123-4567</a></p>
+                    <div class="availability">
+                        <span class="status-badge online">Available Now</span>
+                        <p>Mon-Fri: 9:00 AM - 6:00 PM EST</p>
+                    </div>
+                </div>
+                <div class="contact-card">
+                    <i class="fas fa-envelope"></i>
+                    <h3>Email Us</h3>
+                    <p><a href="mailto:support@bookstore.com">support@bookstore.com</a></p>
+                    <p><a href="mailto:sales@bookstore.com">sales@bookstore.com</a></p>
+                    <p class="response-time">Average response time: 2-4 hours</p>
+                </div>
+                <div class="contact-card">
+                    <i class="fas fa-location-dot"></i>
+                    <h3>Visit Us</h3>
+                    <p>123 Book Street</p>
+                    <p>Reading City, RC 12345</p>
+                    <a href="https://maps.google.com" target="_blank" class="map-link">View on Google Maps</a>
+                </div>
+            </div>
+
+            <div class="contact-form-container" id="contact-form">
+                <div class="form-header">
+                    <h2>Send us a Message</h2>
+                    <p>Fill out the form below and we'll get back to you shortly.</p>
+                </div>
+                <form class="contact-form" id="contactForm">
+                    <div class="form-grid">
+                        <div class="form-group">
+                            <label for="name">Full Name</label>
+                            <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="subject">Subject</label>
+                        <select id="subject" name="subject" required>
+                            <option value="">Select a subject</option>
+                            <option value="general">General Inquiry</option>
+                            <option value="order">Order Status</option>
+                            <option value="returns">Returns & Refunds</option>
+                            <option value="shipping">Shipping Information</option>
+                            <option value="feedback">Feedback & Suggestions</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="order-number">Order Number (Optional)</label>
+                        <input type="text" id="order-number" name="order-number" placeholder="Enter your order number if applicable">
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="5" placeholder="How can we help you?" required></textarea>
+                        <div class="char-count">0/1000 characters</div>
+                    </div>
+                    <div class="form-group">
+                        <label class="checkbox-label">
+                            <input type="checkbox" name="newsletter" id="newsletter">
+                            <span>Subscribe to our newsletter for updates and special offers</span>
+                        </label>
+                    </div>
+                    <button type="submit" class="submit-button">
+                        <i class="fas fa-paper-plane"></i>
+                        Send Message
+                    </button>
+                </form>
+            </div>
+        </section>
+
+        <section class="faq-section" id="faq-section">
+            <div class="section-header">
+                <h2>Frequently Asked Questions</h2>
+                <p>Find quick answers to common questions about our services.</p>
+            </div>
+            <div class="faq-grid">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>How can I track my order?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>You can track your order by:</p>
+                        <ul>
+                            <li>Logging into your account and visiting the Order History section</li>
+                            <li>Using the tracking number sent to your email</li>
+                            <li>Contacting our customer support team</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>What is your return policy?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>We offer a hassle-free 30-day return policy:</p>
+                        <ul>
+                            <li>Books must be in original condition</li>
+                            <li>Return shipping is free for damaged items</li>
+                            <li>Refunds are processed within 5-7 business days</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Do you ship internationally?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Yes, we ship to most countries worldwide:</p>
+                        <ul>
+                            <li>International shipping costs vary by location</li>
+                            <li>Delivery times range from 7-14 business days</li>
+                            <li>All orders are tracked and insured</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>How long does shipping take?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Shipping times vary by location:</p>
+                        <ul>
+                            <li>Domestic orders: 3-5 business days</li>
+                            <li>Express shipping: 1-2 business days</li>
+                            <li>International: 7-14 business days</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="faq-footer">
+                <p>Can't find what you're looking for?</p>
+                <a href="#contact-form" class="btn-secondary">Contact Our Support Team</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>About Us</h3>
+                <p>Your trusted source for books online. We offer a wide selection of books at competitive prices.</p>
+                <div class="social-links">
+                    <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                    <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">Shipping Policy</a></li>
+                    <li><a href="#">Return Policy</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms of Service</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Newsletter</h3>
+                <p>Subscribe to get updates on new releases and special offers</p>
+                <form class="newsletter-form">
+                    <div class="form-group">
+                        <input type="email" placeholder="Enter your email" required>
+                        <button type="submit">
+                            <i class="fas fa-paper-plane"></i>
+                            Subscribe
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        // FAQ Accordion
+        document.querySelectorAll('.faq-question').forEach(question => {
+            question.addEventListener('click', () => {
+                const item = question.parentElement;
+                const answer = question.nextElementSibling;
+                const icon = question.querySelector('i');
+                
+                // Close other open FAQs
+                document.querySelectorAll('.faq-item').forEach(otherItem => {
+                    if (otherItem !== item && otherItem.classList.contains('active')) {
+                        otherItem.classList.remove('active');
+                        otherItem.querySelector('.faq-answer').style.maxHeight = null;
+                        otherItem.querySelector('i').classList.remove('fa-chevron-up');
+                        otherItem.querySelector('i').classList.add('fa-chevron-down');
+                    }
+                });
+
+                // Toggle current FAQ
+                item.classList.toggle('active');
+                if (item.classList.contains('active')) {
+                    answer.style.maxHeight = answer.scrollHeight + 'px';
+                    icon.classList.replace('fa-chevron-down', 'fa-chevron-up');
+                } else {
+                    answer.style.maxHeight = null;
+                    icon.classList.replace('fa-chevron-up', 'fa-chevron-down');
+                }
+            });
+        });
+
+        // Character count for message
+        const messageTextarea = document.getElementById('message');
+        const charCount = document.querySelector('.char-count');
+        
+        messageTextarea.addEventListener('input', () => {
+            const count = messageTextarea.value.length;
+            charCount.textContent = `${count}/1000 characters`;
+            if (count > 1000) {
+                charCount.classList.add('error');
+                messageTextarea.value = messageTextarea.value.substring(0, 1000);
+            } else {
+                charCount.classList.remove('error');
+            }
+        });
+
+        // Form submission
+        document.getElementById('contactForm').addEventListener('submit', (e) => {
+            e.preventDefault();
+            // Add your form submission logic here
+            alert('Thank you for your message. We will get back to you soon!');
+            e.target.reset();
+        });
+    </script>
+</body>
+</html> 

@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Detail - BookStore</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <h1>BookStore</h1>
+            </div>
+            <div class="nav-links">
+                <a href="./index.html">Home</a>
+                <a href="./categories.html">Categories</a>
+                <a href="./new-releases.html">New Releases</a>
+                <a href="./contact.html">Contact</a>
+            </div>
+            <div class="nav-icons">
+                <a href="#" class="search-icon"><i class="fas fa-search"></i></a>
+                <div class="cart-wrapper">
+                    <a href="#" class="cart-icon"><i class="fas fa-shopping-cart"></i><span class="cart-count">0</span></a>
+                    <div class="cart-dropdown">
+                        <h3>Shopping Cart</h3>
+                        <div id="cartItems" class="cart-items">
+                            <!-- Cart items will be dynamically added here -->
+                        </div>
+                        <div class="cart-summary">
+                            <div class="cart-total">
+                                <span>Total:</span>
+                                <span id="cartTotal">$0.00</span>
+                            </div>
+                            <button id="checkoutButton" class="submit-button">Proceed to Checkout</button>
+                        </div>
+                        <div id="emptyCartMessage" class="empty-cart-message">
+                            <i class="fas fa-shopping-cart"></i>
+                            <p>Your cart is empty</p>
+                        </div>
+                    </div>
+                </div>
+                <a href="#" class="user-icon"><i class="fas fa-user"></i></a>
+            </div>
+        </nav>
+    </header>
+
+    <main class="book-detail-page">
+        <div class="book-detail-container">
+            <!-- Book Information -->
+            <div class="book-detail-content">
+                <div class="book-main-info">
+                    <div class="book-image">
+                        <img src="" alt="Book Cover" id="bookImage">
+                    </div>
+                    <div class="book-info">
+                        <h1 id="bookTitle"></h1>
+                        <p class="book-author">By <span id="bookAuthor"></span></p>
+                        <div class="book-rating">
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                            <span class="rating-count">(125 reviews)</span>
+                        </div>
+                        <div class="book-price">
+                            <span class="current-price" id="bookPrice"></span>
+                            <span class="original-price">$24.99</span>
+                            <span class="discount">20% OFF</span>
+                        </div>
+                        <div class="book-availability">
+                            <i class="fas fa-check"></i> In Stock
+                        </div>
+                        <div class="book-actions">
+                            <div class="quantity-selector">
+                                <button class="quantity-btn minus">-</button>
+                                <input type="number" value="1" min="1" max="99" id="quantity">
+                                <button class="quantity-btn plus">+</button>
+                            </div>
+                            <button class="add-to-cart-btn" id="addToCartBtn">
+                                <i class="fas fa-shopping-cart"></i> Add to Cart
+                            </button>
+                            <button class="wishlist-btn">
+                                <i class="far fa-heart"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Book Details Tabs -->
+                <div class="book-details-tabs">
+                    <div class="tabs">
+                        <button class="tab-btn active" data-tab="description">Description</button>
+                        <button class="tab-btn" data-tab="details">Details</button>
+                        <button class="tab-btn" data-tab="reviews">Reviews</button>
+                    </div>
+                    <div class="tab-content">
+                        <div class="tab-pane active" id="description">
+                            <p id="bookDescription"></p>
+                        </div>
+                        <div class="tab-pane" id="details">
+                            <table class="book-details-table">
+                                <tr>
+                                    <th>Publisher</th>
+                                    <td id="publisher"></td>
+                                </tr>
+                                <tr>
+                                    <th>Publication Date</th>
+                                    <td id="publicationDate"></td>
+                                </tr>
+                                <tr>
+                                    <th>Pages</th>
+                                    <td id="pages"></td>
+                                </tr>
+                                <tr>
+                                    <th>Language</th>
+                                    <td id="language"></td>
+                                </tr>
+                                <tr>
+                                    <th>ISBN-13</th>
+                                    <td id="isbn"></td>
+                                </tr>
+                                <tr>
+                                    <th>Dimensions</th>
+                                    <td id="dimensions"></td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div class="tab-pane" id="reviews">
+                            <div class="reviews-summary">
+                                <div class="overall-rating">
+                                    <h3>4.5</h3>
+                                    <div class="stars">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star-half-alt"></i>
+                                    </div>
+                                    <p>Based on 125 reviews</p>
+                                </div>
+                                <div class="rating-bars">
+                                    <div class="rating-bar">
+                                        <span>5 stars</span>
+                                        <div class="bar"><div class="fill" style="width: 70%"></div></div>
+                                        <span>70%</span>
+                                    </div>
+                                    <div class="rating-bar">
+                                        <span>4 stars</span>
+                                        <div class="bar"><div class="fill" style="width: 20%"></div></div>
+                                        <span>20%</span>
+                                    </div>
+                                    <div class="rating-bar">
+                                        <span>3 stars</span>
+                                        <div class="bar"><div class="fill" style="width: 5%"></div></div>
+                                        <span>5%</span>
+                                    </div>
+                                    <div class="rating-bar">
+                                        <span>2 stars</span>
+                                        <div class="bar"><div class="fill" style="width: 3%"></div></div>
+                                        <span>3%</span>
+                                    </div>
+                                    <div class="rating-bar">
+                                        <span>1 star</span>
+                                        <div class="bar"><div class="fill" style="width: 2%"></div></div>
+                                        <span>2%</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="reviews-list" id="reviewsList">
+                                <!-- Reviews will be dynamically added here -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>About Us</h3>
+                <p>Your trusted source for books online. We offer a wide selection of books at competitive prices.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">Shipping Policy</a></li>
+                    <li><a href="#">Return Policy</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Newsletter</h3>
+                <p>Subscribe to get updates on new releases and special offers</p>
+                <div class="newsletter-form">
+                    <input type="email" placeholder="Enter your email">
+                    <button>Subscribe</button>
+                </div>
+            </div>
+        </div>
+
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="book-detail.js"></script>
+</body>
+</html> 

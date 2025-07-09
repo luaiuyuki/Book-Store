@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BookStore - Your Online Book Shop</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <h1>BookStore</h1>
+            </div>
+            <div class="nav-links">
+                <a href="./index.html" class="active">Home</a>
+                <a href="./categories.html">Categories</a>
+                <a href="./new-releases.html">New Releases</a>
+                <a href="./contact.html">Contact</a>
+            </div>
+            <div class="nav-icons">
+                <a href="#" class="search-icon"><i class="fas fa-search"></i></a>
+                <div class="cart-wrapper">
+                    <a href="#" class="cart-icon"><i class="fas fa-shopping-cart"></i><span class="cart-count">0</span></a>
+                    <!-- Shopping Cart Dropdown -->
+                    <div class="cart-dropdown">
+                        <h3>Shopping Cart</h3>
+                        <div id="cartItems" class="cart-items">
+                            <!-- Cart items will be dynamically added here -->
+                        </div>
+                        <div class="cart-summary">
+                            <div class="cart-total">
+                                <span>Total:</span>
+                                <span id="cartTotal">$0.00</span>
+                            </div>
+                            <button id="checkoutButton" class="submit-button">Proceed to Checkout</button>
+                        </div>
+                        <div id="emptyCartMessage" class="empty-cart-message">
+                            <i class="fas fa-shopping-cart"></i>
+                            <p>Your cart is empty</p>
+                        </div>
+                    </div>
+                </div>
+                <a href="#" class="user-icon"><i class="fas fa-user"></i></a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <h2>Discover Your Next Favorite Book</h2>
+                <p>Explore thousands of books from various genres at great prices</p>
+                <div class="search-bar">
+                    <input type="text" placeholder="Search for books, authors, or ISBN...">
+                    <button><i class="fas fa-search"></i> Search</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="featured-books">
+            <h2>Featured Books</h2>
+            <div class="book-grid">
+                <div class="book-card">
+                    <img src="./img/image_217480.webp" alt="Book Cover">
+                    <h3>Cây Cam Ngọt Của Tôi</h3>
+                    <p class="author">José Mauro de Vasconcelos</p>
+                    <p class="price">70.200 đ</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+                <div class="book-card">
+                    <img src="./img/8935278607311.webp" alt="Book Cover">
+                    <h3>Không Diệt Không Sinh Đừng Sợ Hãi</h3>
+                    <p class="author">Thích Nhất Hạnh</p>
+                    <p class="price">71.500 đ</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+                <div class="book-card">
+                    <img src="./img/image_195509_1_34396.webp" alt="Book Cover">
+                    <h3>Khi Hơi Thở Hóa Thinh Không</h3>
+                    <p class="author">Paul Kalanithi</p>
+                    <p class="price">87.200 đ</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+                <div class="book-card">
+                    <img src="./img/image_183259.webp" alt="Book Cover">
+                    <h3>Đàn Ông Sao Hỏa Đàn Bà Sao Kim</h3>
+                    <p class="author">John Gray</p>
+                    <p class="price">122.200 đ</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="categories">
+            <h2>Popular Categories</h2>
+            <div class="category-grid">
+                <div class="category-card">
+                    <i class="fas fa-book"></i>
+                    <h3>Fiction</h3>
+                </div>
+                <div class="category-card">
+                    <i class="fas fa-graduation-cap"></i>
+                    <h3>Academic</h3>
+                </div>
+                <div class="category-card">
+                    <i class="fas fa-heart"></i>
+                    <h3>Romance</h3>
+                </div>
+                <div class="category-card">
+                    <i class="fas fa-rocket"></i>
+                    <h3>Sci-Fi</h3>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>About Us</h3>
+                <p>Your trusted source for books online. We offer a wide selection of books at competitive prices.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">Shipping Policy</a></li>
+                    <li><a href="#">Return Policy</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Newsletter</h3>
+                <p>Subscribe to get updates on new releases and special offers</p>
+                <div class="newsletter-form">
+                    <input type="email" placeholder="Enter your email">
+                    <button>Subscribe</button>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Login Modal -->
+    <div class="modal" id="loginModal">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <h2>Login</h2>
+            <form id="loginForm" class="auth-form">
+                <div class="form-group">
+                    <label for="loginEmail">Email</label>
+                    <input type="email" id="loginEmail" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="loginPassword">Password</label>
+                    <input type="password" id="loginPassword" name="password" required>
+                </div>
+                <button type="submit" class="submit-button">Login</button>
+                <p class="form-footer">
+                    Don't have an account? <a href="#" id="showRegister">Register here</a>
+                </p>
+            </form>
+        </div>
+    </div>
+
+    <!-- Registration Modal -->
+    <div class="modal" id="registerModal">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <h2>Create Account</h2>
+            <form id="registerForm" class="auth-form">
+                <div class="form-group">
+                    <label for="registerName">Full Name</label>
+                    <input type="text" id="registerName" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="registerEmail">Email</label>
+                    <input type="email" id="registerEmail" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="registerPassword">Password</label>
+                    <input type="password" id="registerPassword" name="password" required>
+                </div>
+                <div class="form-group">
+                    <label for="confirmPassword">Confirm Password</label>
+                    <input type="password" id="confirmPassword" name="confirmPassword" required>
+                </div>
+                <button type="submit" class="submit-button">Register</button>
+                <p class="form-footer">
+                    Already have an account? <a href="#" id="showLogin">Login here</a>
+                </p>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html> 

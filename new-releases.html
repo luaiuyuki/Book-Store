@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Releases - BookStore</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <h1>BookStore</h1>
+            </div>
+            <div class="nav-links">
+                <a href="./index.html">Home</a>
+                <a href="./categories.html">Categories</a>
+                <a href="./new-releases.html" class="active">New Releases</a>
+                <a href="./contact.html">Contact</a>
+            </div>
+            <div class="nav-icons">
+                <a href="#" class="search-icon"><i class="fas fa-search"></i></a>
+                <div class="cart-wrapper">
+                    <a href="#" class="cart-icon"><i class="fas fa-shopping-cart"></i><span class="cart-count">0</span></a>
+                </div>
+                <a href="#" class="user-icon"><i class="fas fa-user"></i></a>
+            </div>
+        </nav>
+    </header>
+
+    <main class="new-releases-page">
+        <section class="new-releases-header">
+            <h1>New & Upcoming Releases</h1>
+            <p>Discover the latest additions to our collection and pre-order upcoming releases from your favorite authors.</p>
+            <div class="release-stats">
+                <div class="stat">
+                    <span class="stat-number">50+</span>
+                    <span class="stat-label">New This Month</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-number">20+</span>
+                    <span class="stat-label">Coming Soon</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-number">15+</span>
+                    <span class="stat-label">Pre-order Deals</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="release-filters">
+            <div class="filter-options">
+                <select class="filter-select" id="timeFilter">
+                    <option value="all">All Time</option>
+                    <option value="this-week">This Week</option>
+                    <option value="this-month">This Month</option>
+                    <option value="coming-soon">Coming Soon</option>
+                </select>
+                <select class="filter-select" id="genreFilter">
+                    <option value="all">All Genres</option>
+                    <option value="fiction">Fiction</option>
+                    <option value="non-fiction">Non-Fiction</option>
+                    <option value="mystery">Mystery & Thriller</option>
+                    <option value="scifi">Sci-Fi & Fantasy</option>
+                </select>
+                <select class="filter-select" id="formatFilter">
+                    <option value="all">All Formats</option>
+                    <option value="hardcover">Hardcover</option>
+                    <option value="paperback">Paperback</option>
+                    <option value="ebook">eBook</option>
+                    <option value="audiobook">Audiobook</option>
+                </select>
+                <select class="filter-select" id="sortFilter">
+                    <option value="release-date">Release Date</option>
+                    <option value="pre-orders">Pre-orders</option>
+                    <option value="price-low">Price: Low to High</option>
+                    <option value="price-high">Price: High to Low</option>
+                </select>
+            </div>
+        </section>
+
+        <section class="new-books-grid">
+            <!-- New Release 1 -->
+            <div class="book-card new-release">
+                <span class="release-badge">New Release</span>
+                <img src="./img/01.webp" alt="Book Cover">
+                <h3>Sách Destination - Grammar And Vocabulary with Answer Key - B1 + B2 + C1 And C2 (Bộ 3 Cuốn) (Tái Bản 2024)</h3>
+                <p class="author">Sarah Mitchell</p>
+                <div class="release-date">
+                    <i class="fas fa-calendar"></i>
+                    Released: March 15, 2025
+                </div>
+                <p class="price">198.100 đ</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+
+            <!-- New Release 2 -->
+            <div class="book-card new-release">
+                <span class="release-badge">Pre-order</span>
+                <img src="./img/bia_11.jpg" alt="Book Cover">
+                <h3>Chiến Lược Đầu Tư Vàng Sinh Lời</h3>
+                <p class="author">Lưu Đường Hâm</p>
+                <div class="release-date">
+                    <i class="fas fa-calendar"></i>
+                    Coming: April 1, 2025
+                </div>
+                <p class="price">98.100 đ</p>
+                <button class="pre-order">Pre-order Now</button>
+            </div>
+
+            <!-- New Release 3 -->
+            <div class="book-card new-release">
+                <span class="release-badge">New Release</span>
+                <img src="./img/71s0TB7HK2L._SY466_.jpg" alt="Book Cover">
+                <h3>The College Finder: Your comprehensive guide to finding colleges that fit YOUR unique path</h3>
+                <p class="author">Steven R Antonoff PH D </p>
+                <div class="release-date">
+                    <i class="fas fa-calendar"></i>
+                    Released: March 10, 2025
+                </div>
+                <p class="price">500.000 đ</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+
+            <!-- New Release 4 -->
+            <div class="book-card new-release">
+                <span class="release-badge">Pre-order</span>
+                <img src="./img/bia03.jpg" alt="Book Cover">
+                <h3>Developing Mathematical Reasoning: Avoiding the Trap of Algorithms (Corwin Mathematics Series)</h3>
+                <p class="author">Michael Chen</p>
+                <div class="release-date">
+                    <i class="fas fa-calendar"></i>
+                    Coming: April 15, 2025
+                </div>
+                <p class="price">300.000 đ</p>
+                <button class="pre-order">Pre-order Now</button>
+            </div>
+
+            <!-- New Release 5 -->
+            <div class="book-card new-release">
+                <span class="release-badge">New Release</span>
+                <img src="./img/chen-thanh-trong-dau-tu---converted_1.jpg" alt="Book Cover">
+                <h3>Chén Thánh Trong Đầu Tư</h3>
+                <p class="author">Tony Robbins</p>
+                <div class="release-date">
+                    <i class="fas fa-calendar"></i>
+                    Released: March 8, 2025
+                </div>
+                <p class="price">160.000 đ</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+
+            <!-- New Release 6 -->
+            <div class="book-card new-release">
+                <span class="release-badge">Pre-order</span>
+                <img src="./img/bia05.jpg" alt="Book Cover">
+                <h3>Undercover Orc: Sweet Monster Treats</h3>
+                <p class="author">Ava Ross</p>
+                <div class="release-date">
+                    <i class="fas fa-calendar"></i>
+                    Coming: May 1, 2025
+                </div>
+                <p class="price">200.000 đ</p>
+                <button class="pre-order">Pre-order Now</button>
+            </div>
+
+            <!-- New Release 7 -->
+            <div class="book-card new-release">
+                <span class="release-badge">New Release</span>
+                <img src="./img/image_217480.webp" alt="Book Cover">
+                <h3>Cây Cam Ngọt Của Tôi</h3> 
+                <p class="author">José Mauro de Vasconcelos</p>     
+                <div class="release-date">
+                    <i class="fas fa-calendar"></i>
+                    Coming: May 1, 2025
+                </div>
+                <p class="price">200.000 đ</p>
+                <button class="pre-order">Pre-order Now</button>    
+            </div>          
+
+            <!-- New Release 8 -->
+            <div class="book-card new-release">
+                <span class="release-badge">New Release</span>
+                <img src="./img/8935278607311.webp" alt="Book Cover">
+                <h3>Không Diệt Không Sinh Đừng Sợ Hãi</h3> 
+                <p class="author">Thích Nhất Hạnh</p>     
+                <div class="release-date">
+                    <i class="fas fa-calendar"></i>
+                    Coming: May 1, 2025
+                </div>
+                <p class="price">75.000 đ</p>
+                <button class="pre-order">Pre-order Now</button>
+            </div>
+
+            <!-- New Release 9 -->
+            <div class="book-card new-release">
+                <span class="release-badge">New Release</span>
+                <img src="./img/bia09.jpg" alt="Book Cover">
+                <h3>The Little Book - Đầu Tư Theo Chiến Lược Phòng Thủ</h3> 
+                <p class="author">Ben Stein</p>     
+                <div class="release-date">
+                    <i class="fas fa-calendar"></i>
+                    Coming: May 3, 2025
+                </div>
+                <p class="price">75.000 đ</p>
+                <button class="pre-order">Pre-order Now</button>    
+            </div>
+
+            <!-- New Release 10 -->
+            <div class="book-card new-release">
+                <span class="release-badge">Pre-order</span>
+                <img src="./img/bia10.webp" alt="Book Cover">
+                <h3>Realign - Tái Cơ Cấu Doanh Nghiệp Sau Covid</h3>
+                <p class="author">Jonathan Trevor</p>
+                <div class="release-date">
+                    <i class="fas fa-calendar"></i>
+                    Coming: April 6, 2025
+                </div>
+                <p class="price">123.100 đ</p>
+                <button class="pre-order">Pre-order Now</button>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>About Us</h3>
+                <p>Your trusted source for books online. We offer a wide selection of books at competitive prices.</p>
+                <div class="social-links">
+                    <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                    <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">Shipping Policy</a></li>
+                    <li><a href="#">Return Policy</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms of Service</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Newsletter</h3>
+                <p>Subscribe to get updates on new releases and special offers</p>
+                <form class="newsletter-form">
+                    <div class="form-group">
+                        <input type="email" placeholder="Enter your email" required>
+                        <button type="submit">
+                            <i class="fas fa-paper-plane"></i>
+                            Subscribe
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Login Modal -->
+    <div class="modal" id="loginModal">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <h2>Login</h2>
+            <form id="loginForm" class="auth-form">
+                <div class="form-group">
+                    <label for="loginEmail">Email</label>
+                    <input type="email" id="loginEmail" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="loginPassword">Password</label>
+                    <input type="password" id="loginPassword" name="password" required>
+                </div>
+                <button type="submit" class="submit-button">Login</button>
+                <p class="form-footer">
+                    Don't have an account? <a href="#" id="showRegister">Register here</a>
+                </p>
+            </form>
+        </div>
+    </div>
+
+    <!-- Registration Modal -->
+    <div class="modal" id="registerModal">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <h2>Create Account</h2>
+            <form id="registerForm" class="auth-form">
+                <div class="form-group">
+                    <label for="registerName">Full Name</label>
+                    <input type="text" id="registerName" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="registerEmail">Email</label>
+                    <input type="email" id="registerEmail" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="registerPassword">Password</label>
+                    <input type="password" id="registerPassword" name="password" required>
+                </div>
+                <div class="form-group">
+                    <label for="confirmPassword">Confirm Password</label>
+                    <input type="password" id="confirmPassword" name="confirmPassword" required>
+                </div>
+                <button type="submit" class="submit-button">Register</button>
+                <p class="form-footer">
+                    Already have an account? <a href="#" id="showLogin">Login here</a>
+                </p>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html> 

@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Categories - BookStore</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <h1>BookStore</h1>
+            </div>
+            <div class="nav-links">
+                <a href="./index.html">Home</a>
+                <a href="./categories.html" class="active">Categories</a>
+                <a href="./new-releases.html">New Releases</a>
+                <a href="./contact.html">Contact</a>
+            </div>
+            <div class="nav-icons">
+                <a href="#" class="search-icon"><i class="fas fa-search"></i></a>
+                <a href="#" class="cart-icon"><i class="fas fa-shopping-cart"></i><span class="cart-count">0</span></a>
+                <a href="#" class="user-icon"><i class="fas fa-user"></i></a>
+            </div>
+        </nav>
+    </header>
+
+    <main class="categories-page">
+        <section class="category-header">
+            <h1>Book Categories</h1>
+            <p>Explore our vast collection of books across different genres — from thrilling fiction and insightful non-fiction to educational and entertaining children’s books.</p>
+            <div class="category-highlights">
+                <div class="highlight-box">
+                    <i class="fas fa-book-reader"></i>
+                    <h3>30+ Genres</h3>
+                </div>
+                <div class="highlight-box">
+                    <i class="fas fa-tags"></i>
+                    <h3>Best Deals</h3>
+                </div>
+                <div class="highlight-box">
+                    <i class="fas fa-rocket"></i>
+                    <h3>New Arrivals</h3>
+                </div>
+            </div>
+        </section>
+        
+
+        <section class="category-list">
+            <div class="category-section">
+                <h2><i class="fas fa-book"></i> Fiction</h2>
+                <div class="subcategories">
+                    <div class="subcategory-card">
+                        <h3>Literary Fiction</h3>
+                        <ul>
+                            <li>Contemporary</li>
+                            <li>Classic Literature</li>
+                            <li>Short Stories</li>
+                        </ul>
+                    </div>
+                    <div class="subcategory-card">
+                        <h3>Genre Fiction</h3>
+                        <ul>
+                            <li>Mystery & Thriller</li>
+                            <li>Science Fiction</li>
+                            <li>Fantasy</li>
+                        </ul>
+                    </div>
+                    <div class="subcategory-card">
+                        <h3>Popular Fiction</h3>
+                        <ul>
+                            <li>Romance</li>
+                            <li>Historical Fiction</li>
+                            <li>Adventure</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="category-section">
+                <h2><i class="fas fa-graduation-cap"></i> Non-Fiction</h2>
+                <div class="subcategories">
+                    <div class="subcategory-card">
+                        <h3>Academic</h3>
+                        <ul>
+                            <li>Science & Math</li>
+                            <li>History</li>
+                            <li>Philosophy</li>
+                        </ul>
+                    </div>
+                    <div class="subcategory-card">
+                        <h3>Self-Development</h3>
+                        <ul>
+                            <li>Personal Growth</li>
+                            <li>Business & Career</li>
+                            <li>Health & Wellness</li>
+                        </ul>
+                    </div>
+                    <div class="subcategory-card">
+                        <h3>Lifestyle</h3>
+                        <ul>
+                            <li>Cooking</li>
+                            <li>Travel</li>
+                            <li>Arts & Crafts</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="category-section">
+                <h2><i class="fas fa-child"></i> Children's Books</h2>
+                <div class="subcategories">
+                    <div class="subcategory-card">
+                        <h3>Age Groups</h3>
+                        <ul>
+                            <li>Early Readers (0-5)</li>
+                            <li>Middle Grade (6-12)</li>
+                            <li>Young Adult</li>
+                        </ul>
+                    </div>
+                    <div class="subcategory-card">
+                        <h3>Educational</h3>
+                        <ul>
+                            <li>Picture Books</li>
+                            <li>Learning & Activity</li>
+                            <li>Reference</li>
+                        </ul>
+                    </div>
+                    <div class="subcategory-card">
+                        <h3>Popular Series</h3>
+                        <ul>
+                            <li>Adventure Series</li>
+                            <li>Fantasy Series</li>
+                            <li>Educational Series</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>About Us</h3>
+                <p>Your trusted source for books online. We offer a wide selection of books at competitive prices.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">Shipping Policy</a></li>
+                    <li><a href="#">Return Policy</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Newsletter</h3>
+                <p>Subscribe to get updates on new releases and special offers</p>
+                <div class="newsletter-form">
+                    <input type="email" placeholder="Enter your email">
+                    <button>Subscribe</button>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Login Modal -->
+    <div class="modal" id="loginModal">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <h2>Login</h2>
+            <form id="loginForm" class="auth-form">
+                <div class="form-group">
+                    <label for="loginEmail">Email</label>
+                    <input type="email" id="loginEmail" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="loginPassword">Password</label>
+                    <input type="password" id="loginPassword" name="password" required>
+                </div>
+                <button type="submit" class="submit-button">Login</button>
+                <p class="form-footer">
+                    Don't have an account? <a href="#" id="showRegister">Register here</a>
+                </p>
+            </form>
+        </div>
+    </div>
+
+    <!-- Registration Modal -->
+    <div class="modal" id="registerModal">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <h2>Create Account</h2>
+            <form id="registerForm" class="auth-form">
+                <div class="form-group">
+                    <label for="registerName">Full Name</label>
+                    <input type="text" id="registerName" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="registerEmail">Email</label>
+                    <input type="email" id="registerEmail" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="registerPassword">Password</label>
+                    <input type="password" id="registerPassword" name="password" required>
+                </div>
+                <div class="form-group">
+                    <label for="confirmPassword">Confirm Password</label>
+                    <input type="password" id="confirmPassword" name="confirmPassword" required>
+                </div>
+                <button type="submit" class="submit-button">Register</button>
+                <p class="form-footer">
+                    Already have an account? <a href="#" id="showLogin">Login here</a>
+                </p>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html> 
