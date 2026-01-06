@@ -1,27 +1,32 @@
-# 📚 BookStore - Website Bán Sách Trực Tuyến
+# 📚 BookStore - Online Bookstore Website
 
-**BookStore** là một website bán sách trực tuyến hiện đại và dễ sử dụng được xây dựng bằng **HTML**, **CSS** và **JavaScript**. Dự án hỗ trợ giao diện người dùng (user) và quản trị viên (admin), bao gồm đăng nhập tài khoản, tìm kiếm sách, xem sách theo danh mục, giỏ hàng và khu vực quản lý tĩnh dành cho admin.
+**BookStore** is a modern and user-friendly online bookstore website built with **HTML**, **CSS**, and **JavaScript**.  
+The project supports both **user** and **admin** interfaces, including login, book search, category browsing, shopping cart, and a simple admin panel.
 
 ---
 
-## 🚀 Tính năng chính
+## 🚀 Main Features
 
-- 🌟 Trang chủ với thanh tìm kiếm và sách nổi bật
-- 📂 Trang danh mục sách (Categories)
-- 🆕 Trang sách mới phát hành (New Releases)
-- 🛒 Trang giỏ hàng, thanh toán đơn giản
-- 🔐 Đăng nhập và đăng ký tài khoản người dùng
-- 👤 Đăng nhập tài khoản dành riêng cho quản trị viên (Admin Login)
-- 📋 Giao diện admin đơn giản (HTML tĩnh)
-- 📱 Giao diện hiện đại, responsive với Bootstrap 5
+- 🌟 **Home Page** with search bar and featured books  
+- 📂 **Categories Page** to browse books by category  
+- 🆕 **New Releases Page**  
+- 🛒 **Shopping Cart** with simple checkout  
+- 🔐 **User Login and Registration**  
+- 👤 **Admin Login** for administrator access  
+- 📋 **Simple Admin Panel** (static HTML)  
+- 📱 **Modern, Responsive UI** using Bootstrap 5
 
-## 🔐 Đăng nhập Admin
+---
 
-- Email: admin@gmail.com
-- Password: admin123
+## 🔐 Admin Login Credentials
+
+- **Email:** admin@gmail.com  
+- **Password:** admin123
+
+---
 
 ## 🌐 Live Demo
 
-- Link: https://luaiuyuki.github.io/Book-Store/
+- [View the website](https://luaiuyuki.github.io/Book-Store/)
 
 
